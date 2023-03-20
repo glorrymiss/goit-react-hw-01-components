@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <Container
       style={{
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

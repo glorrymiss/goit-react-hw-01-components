@@ -11,3 +11,9 @@ export const Thead = styled.th`
   line-height: 1.38;
   padding: 6px;
 `;
+
+// export const Wrap = styled.tr`
+//   & :nth-of-type(n + 3) {
+//     background-color: green;
+//   }
+// `;

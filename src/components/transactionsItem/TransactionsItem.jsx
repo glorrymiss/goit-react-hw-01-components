@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import { Data } from './TransactionsItem.styled';
+import { Data, Wrap } from './TransactionsItem.styled';
 
 export const TransactionsItem = ({ type, amount, currency }) => {
   return (
-    <tr>
+    <Wrap>
       <Data>{type}</Data>
       <Data>{amount}</Data>
       <Data>{currency}</Data>
-    </tr>
+    </Wrap>
   );
 };
 

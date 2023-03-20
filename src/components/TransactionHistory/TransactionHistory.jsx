@@ -13,9 +13,12 @@ export const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
       <tbody>
-        {items.map(item => {
+        {items.map((item, index) => {
           return (
             <TransactionsItem
+              // style={{
+              //   backgroundColor: index % 2 === 1 ? 'gray' : 'red',
+              // }}
               key={item.id}
               type={item.type}
               amount={item.amount}
