@@ -4,7 +4,6 @@ import { StatisticsItem } from '../StatisticsItem/StatisticsItem';
 import { StatList, Statistic, Title } from './Statistics.styled';
 
 export function Statistics({ title, stats }) {
-  console.log(title);
   return (
     <Statistic>
       {title && <Title>{title}</Title>}
