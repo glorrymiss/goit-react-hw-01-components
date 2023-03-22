@@ -9,13 +9,9 @@ export function Statistics({ title, stats }) {
       {title && <Title>{title}</Title>}
 
       <StatList>
-        {stats.map(stat => {
+        {stats.map(({ id, label, percentage }) => {
           return (
-            <StatisticsItem
-              key={stat.id}
-              label={stat.label}
-              percentage={stat.percentage}
-            />
+            <StatisticsItem key={id} label={label} percentage={percentage} />
           );
         })}
       </StatList>

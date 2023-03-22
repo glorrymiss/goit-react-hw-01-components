@@ -17,9 +17,7 @@ export function Profile({
   location,
   avatar,
 
-  followers,
-  views,
-  likes,
+  stats,
 }) {
   return (
     <Profil>
@@ -31,7 +29,13 @@ export function Profile({
       </Description>
 
       <Stats>
-        {<ProfileList followers={followers} views={views} likes={likes} />}
+        {
+          <ProfileList
+            followers={stats.followers}
+            views={stats.views}
+            likes={stats.likes}
+          />
+        }
       </Stats>
     </Profil>
   );
